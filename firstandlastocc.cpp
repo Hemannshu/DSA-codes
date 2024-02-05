@@ -54,3 +54,4 @@ pair<int, int> firstAndLastPosition(vector<int>& arr, int n, int k)
     
     return p;
 }
+// isi same question me agar no of occurences puche toh we can do (last occ-first occ)+1
