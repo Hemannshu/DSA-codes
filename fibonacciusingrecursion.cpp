@@ -1,17 +1,19 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int fibonacci(int n){
-	if(n==0 || n==1 ){
-		return n;
-	}
-	int result1 = fibonacci(n-1);
-	int result2 = fibonacci(n-2);
-	int ans = result1+result2;
-	
+int fib(int n){
+    if(n<=1){
+        return n;
+    }
+    int result1 = fib(n-1);
+    int result2= fib(n-2);
+    int result = result1 + result2;
+    return result;
 }
-int main(){
-	int n;
-	cin>>n;
-	int ans = fibonacci(n);
-	cout<<ans<<endl;
+
+int main() {
+    int n;
+    cin>>n;
+    int ans = fib(n);
+    cout<< ans<<endl;
+    return 0;
 }
