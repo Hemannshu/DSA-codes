@@ -15,5 +15,5 @@ int main() {
     cin>>n;
     int ans = fib(n);
     cout<< ans<<endl;
-    return 0;
+    
 }
